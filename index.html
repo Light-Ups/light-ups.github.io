@@ -1,199 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2JEGJ5WDSG"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-2JEGJ5WDSG');
-    </script>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5B94HFP7');</script>
-    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LightUps - Smart UPS Monitoring</title>
-    <style>
-        :root { 
-            --primary: #00e676; /* Electric Green */
-            --accent: #0078d4; /* Qt Blue */
-            --bg-dark: #121212; 
-            --card-bg: #1e1e2e;
-            --text-light: #e0e0e0;
-            --text-muted: #b0b0b0;
-            --code-bg: #000000;
-        }
-        
-        body { 
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; 
-            margin: 0; 
-            background: var(--bg-dark); 
-            color: var(--text-light); 
-            line-height: 1.6; 
-        }
-
-        header { 
-            background: linear-gradient(135deg, #000 0%, var(--card-bg) 100%);
-            padding: 5rem 2rem; 
-            text-align: center; 
-            border-bottom: 3px solid var(--primary);
-        }
-
-        h1 { margin: 0; font-size: 3.5rem; letter-spacing: -1px; color: white; }
-        .tagline { color: var(--primary); font-weight: 500; font-size: 1.2rem; margin-top: 0.5rem; }
-
-        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
-
-        .btn { 
-            display: inline-block; 
-            background: var(--primary); 
-            color: #000; 
-            padding: 0.8rem 2.5rem; 
-            text-decoration: none; 
-            border-radius: 50px; 
-            font-weight: bold; 
-            transition: transform 0.2s, box-shadow 0.2s;
-            margin-top: 1.5rem;
-        }
-        .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(0, 230, 118, 0.5); }
-
-        section { 
-            margin-bottom: 3rem; 
-            background: var(--card-bg); 
-            padding: 2.5rem; 
-            border-radius: 12px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
-        }
-
-        h2 { color: var(--primary); border-bottom: 1px solid #3d3d5c; padding-bottom: 0.5rem; margin-top: 0; }
-        h3 { color: var(--accent); margin-top: 2rem; }
-
-        .env-list { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-            gap: 1rem; 
-            list-style: none; 
-            padding: 0; 
-        }
-        .env-item { background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 8px; border-top: 2px solid var(--primary); }
-        .env-item strong { display: block; color: var(--primary); font-size: 0.9rem; }
-
-        .setup-steps { list-style: none; padding: 0; }
-        .setup-steps > li { margin-bottom: 1.5rem; padding-left: 1.5rem; border-left: 2px solid var(--accent); }
-        
-        .sub-steps { list-style: disc; padding-left: 1.5rem; margin-top: 0.5rem; color: var(--text-muted); }
-        .sub-steps li { margin-bottom: 0.5rem; }
-
-        code { 
-            background: var(--code-bg); 
-            color: #ffab40; 
-            padding: 0.3rem 0.6rem; 
-            border-radius: 4px; 
-            font-family: 'Cascadia Code', 'Consolas', monospace;
-            font-size: 0.9rem;
-        }
-        .code-block { display: block; margin: 0.5rem 0; padding: 1rem; line-height: 1.4; border: 1px solid #333; }
-
-        .screenshot { 
-            width: 100%; 
-            border-radius: 8px; 
-            margin-top: 2rem; 
-            border: 1px solid #444;
-            opacity: 0.9;
-            transition: opacity 0.3s;
-        }
-        .screenshot:hover { opacity: 1; }
-
-        footer { text-align: center; padding: 4rem 2rem; font-size: 0.9rem; color: var(--text-muted); border-top: 1px solid #222; }
-        strong { color: white; }
-    </style>
+    <title>LightUps — Smart UPS Monitoring Made Effortless</title>
+    <meta name="description" content="A complete ecosystem for professional UPS monitoring. From hardware to desktop — open, lightweight, and ready for business.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5B94HFP7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<header>
-    <h1>LightUps</h1>
-    <p class="tagline">Smart & Lightweight UPS Monitoring for Windows</p>
-    <a href="https://github.com/Light-Ups/light-ups.github.io/releases" class="btn">Download Latest Release</a>
-</header>
 
-<div class="container">
-    <section>
-        <h2>About the Project</h2>
-        <p>LightUps is a high-performance Windows Service and C++/Qt GUI application. It monitors your <strong>Uninterruptible Power Supply (UPS)</strong> via standard Windows power APIs, ensuring critical event logging and automated system safety during power fluctuations.</p>
-    </section>
+<nav>
+    <div class="container">
+        <a href="#" class="logo">Light<span>Ups</span></a>
+        <ul class="nav-links">
+            <li><a href="#ecosystem">Ecosystem</a></li>
+            <li><a href="#lightups">LightUps</a></li>
+            <li><a href="#satellite">Satellite</a></li>
+            <li><a href="#why">Why</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <section>
-        <h2>Development Environment</h2>
-        <p>The project is built using a specific toolchain to ensure stability and compatibility:</p>
-        <div class="env-list">
-            <div class="env-item"><strong>Framework</strong>Qt 6.9.1 (MinGW 64-bit)</div>
-            <div class="env-item"><strong>IDE</strong>Qt Creator 18.0.1</div>
-            <div class="env-item"><strong>Compiler</strong>MinGW 13.1.0 (64-bit)</div>
-            <div class="env-item"><strong>Build System</strong>CMake 3.30.5 & Ninja 1.12.1</div>
-            <div class="env-item"><strong>Installer</strong>Qt Installer Framework 4.10</div>
+<section class="hero">
+    <div class="container">
+        <p class="tagline">UPS Monitoring Ecosystem</p>
+        <h1>Smart UPS Monitoring<br><span class="accent">Made Effortless</span></h1>
+        <p class="subtitle">
+            A practical and functional UPS monitoring solution for your local network.
+            Easy to configure, effortless to use. Not a cloud platform &mdash;
+            no remote alarming, no external servers.
+        </p>
+    </div>
+</section>
+
+<section id="ecosystem">
+    <div class="container">
+        <div class="section-header">
+            <h2>The Ecosystem</h2>
+            <p>Three components, one goal: keep your infrastructure powered and visible.</p>
         </div>
-        <img src="Screenshot 2026-01-15 101815.png" alt="Qt Maintenance Tool Configuration" class="screenshot">
-    </section>
 
-    <section>
-        <h2>Deployment Configuration</h2>
-        <p>To automate the creation of the LightUps installer, follow these steps in <strong>Qt Creator</strong>:</p>
-        
-        <ul class="setup-steps">
-            <li>
-                <strong>1. Select Project</strong><br>
-                In the left sidebar, click on <strong>Projects</strong> and ensure <strong>LightUps</strong> is the active project.
-            </li>
-            <li>
-                <strong>2. Choose Kit</strong><br>
-                Under <strong>Build & Run</strong>, select the correct kit: <strong>Desktop Qt 6.9.1 MinGW 64-bit</strong>.
-            </li>
-            <li>
-                <strong>3. Deploy Settings</strong><br>
-                Open the <strong>Deploy Settings</strong> tab at the top.
-            </li>
-            <li>
-                <strong>4. Configure Deployment Configuration</strong><br>
-                Ensure <strong>Active deployment configuration</strong> is set to <strong>Deploy Configuration</strong>, then add these steps:
-                <ul class="sub-steps">
-                    <li><strong>4a. Build Step:</strong> Add a deploy step for <code>build target all</code>.</li>
-                    <li><strong>4b. Install Step:</strong> Add a deploy step for <code>install</code>.</li>
-                    <li><strong>4c. Custom Process Step:</strong> Add a step with the following details:
-                        <div class="code-block">
-                            <code><strong>Command:</strong> C:\Qt\Tools\QtInstallerFramework\4.10\bin\binarycreator.exe</code><br>
-                            <code><strong>Arguments:</strong> --offline-only -c config\config.xml -p packages lightups.exe</code><br>
-                            <code><strong>Working Directory:</strong> %{ActiveProject:NativePath}\installer</code>
-                        </div>
-                    </li>
+        <div class="flow">
+            <div class="flow-steps">
+                <span class="flow-step">UPS</span>
+                <span class="flow-connector">&#8594;</span>
+                <span class="flow-step active">Satellite</span>
+                <span class="flow-connector">&#8594;</span>
+                <span class="flow-step">TLS Driver</span>
+                <span class="flow-connector">&#8594;</span>
+                <span class="flow-step">LightUps Service</span>
+                <span class="flow-connector">&#8594;</span>
+                <span class="flow-step">LightUps GUI</span>
+            </div>
+            <p style="color:#6b7280; font-size:13px; margin-top:20px;">
+                Or connect directly via USB &mdash; no Satellite required.
+            </p>
+        </div>
+
+        <div class="cards" style="margin-top:48px;">
+            <div class="card">
+                <span class="icon">&#9889;</span>
+                <h3>LightUps</h3>
+                <p>Windows monitoring software. Version 1.0. Currently supports NHS Mini Senoidal UPS units via USB. A lightweight service runs 24/7, paired with a system tray GUI.</p>
+            </div>
+            <div class="card">
+                <span class="icon">&#9733;</span>
+                <h3>LightUps Satellite</h3>
+                <p>An ESP32-S3 based reference design that turns any USB-connected UPS into a networked appliance. Fully functional, field-tested.</p>
+            </div>
+            <div class="card">
+                <span class="icon">&#128274;</span>
+                <h3>TLS Driver</h3>
+                <p>An encrypted plugin for the LightUps service. Connects to the Satellite over TLS 1.2 with PSK authentication.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="lightups">
+    <div class="container">
+        <div class="section-header">
+            <h2>LightUps</h2>
+            <p>Professional UPS monitoring for Windows &mdash; tiny footprint, enterprise features.</p>
+        </div>
+
+        <div class="specs">
+            <div class="spec">
+                <div class="value">&lt;25 MB</div>
+                <div class="label">Combined RAM</div>
+            </div>
+            <div class="spec">
+                <div class="value">&lt;1%</div>
+                <div class="label">CPU idle</div>
+            </div>
+        </div>
+        <p style="text-align:center; color:#6b7280; font-size:14px; margin-top:24px;">
+            Minimal footprint &mdash; runs on any modern Windows PC
+        </p>
+
+        <div class="cards" style="margin-top:40px;">
+            <div class="card">
+                <h3>Real-time Monitoring</h3>
+                <p>Track input/output voltage, battery level, battery voltage, load percentage, and temperature &mdash; updated continuously.</p>
+            </div>
+            <div class="card">
+                <h3>Windows Service + GUI</h3>
+                <p>A background service monitors your UPS even when no one is logged in. A system tray application provides live status at a glance.</p>
+            </div>
+            <div class="card">
+                <h3>Plugin Architecture</h3>
+                <p>Support for different UPS hardware through a simple driver interface. Add new devices without modifying the core. Custom drivers can be developed on request and in collaboration with your team.</p>
+            </div>
+            <div class="card">
+                <h3>Smart Power Actions</h3>
+                <p>Automatic shutdown, sleep, or hibernate when battery reaches critical level. Configurable delay and CPU power saver mode.</p>
+            </div>
+            <div class="card">
+                <h3>Windows Event Log</h3>
+                <p>Full integration with Windows Event Viewer &mdash; power events, warnings, and errors are logged professionally.</p>
+            </div>
+            <div class="card">
+                <h3>Multi-language</h3>
+                <p>English, Dutch, and Brazilian Portuguese out of the box. Easy to add more.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="satellite">
+    <div class="container">
+        <div class="section-header">
+            <h2>LightUps Satellite</h2>
+            <p>An ESP32-based bridge that makes any USB UPS network-aware &mdash; no cloud, no subscription.</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <span class="icon">&#127760;</span>
+                <h3>Network your UPS</h3>
+                <p>Connects to your UPS via USB and broadcasts telemetry over Ethernet to up to <strong>4 PCs</strong> simultaneously. Ideal for small offices and server rooms.</p>
+                <div class="badges">
+                    <span class="badge">mDNS: lightups.local</span>
+                    <span class="badge">SSDP: Windows Discovery</span>
+                </div>
+            </div>
+            <div class="card">
+                <span class="icon">&#128421;</span>
+                <h3>Web Dashboard</h3>
+                <p>Open <strong>http://lightups.local</strong> in any browser &mdash; or find the device in Windows Network via SSDP. No app to install. Configuration is straightforward: claim a slot, copy the token, and enter it in the LightUps settings.</p>
+                <ul>
+                    <li><strong>Dashboard:</strong> manage up to 4 PC client slots, view and claim connections, copy authentication tokens</li>
+                    <li><strong>Settings:</strong> change hostname, IP (DHCP/static), TLS port, admin password</li>
+                    <li><strong>Auto-reboot:</strong> network changes trigger a graceful reboot with countdown</li>
                 </ul>
-            </li>
-        </ul>
-        <img src="Screenshot 2026-01-14 114503.png" alt="Qt Creator Deploy Settings" class="screenshot">
-    </section>
+            </div>
+            <div class="card">
+                <span class="icon">&#128272;</span>
+                <h3>End-to-end Encryption</h3>
+                <p>All telemetry is sent over TLS 1.2 with PSK ciphers. Each PC gets a unique authentication token. ARP-based fraud detection prevents MAC spoofing.</p>
+            </div>
+        </div>
 
-    <section>
-        <h2>Key Features</h2>
-        <ul>
-            <li><strong>Windows Service:</strong> Runs in the background without needing a user login.</li>
-            <li><strong>Event Logging:</strong> Professional integration with the Windows Event Viewer.</li>
-            <li><strong>Qt 6.9 UI:</strong> Clean and responsive real-time status monitoring.</li>
-            <li><strong>Auto-Update Support:</strong> Compatible with the Qt Maintenance Tool for easy updates.</li>
-        </ul>
-    </section>
-</div>
+        <div style="margin-top:40px; padding:32px; background:#14141e; border:1px solid #1e1e2a; border-radius:16px;">
+            <h3 style="margin-bottom:8px; font-size:16px; color:#f59e0b;">How to connect a PC</h3>
+            <p style="color:#9ca3af; font-size:14px;">
+                Open the Satellite web dashboard, claim an available slot, and copy the token.
+                Enter the hostname or IP address, the MAC address, and the token in the
+                <strong>TLS PSK Ethernet Driver</strong> settings of the LightUps service.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="why">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why LightUps?</h2>
+            <p>Built differently. Built for professionals.</p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Incredibly Lightweight</h3>
+                <p>2.4 MB installed, under 10 MB of RAM, virtually zero CPU when idle. Runs on any Windows 10+ machine without slowing it down.</p>
+            </div>
+            <div class="card">
+                <h3>Always On</h3>
+                <p>Installs as a proper Windows service. Monitoring continues even when the user is logged out &mdash; just like enterprise UPS software.</p>
+            </div>
+            <div class="card">
+                <h3>Designed for Local Networks</h3>
+                <p>Built for on-premises monitoring &mdash; not remote alarming or cloud management. Every component runs on your own network. No data leaves your premises. No recurring fees.</p>
+            </div>
+            <div class="card">
+                <h3>Extensible by Design</h3>
+                <p>A clean plugin interface makes it easy to support new UPS models. The ecosystem includes serial, Ethernet, and encrypted TLS drivers.</p>
+            </div>
+            <div class="card">
+                <h3>Hardware Bridge Option</h3>
+                <p>Need to monitor a UPS in a remote rack or shared office? The Satellite bridges it to the network securely &mdash; up to 4 PCs per unit.</p>
+            </div>
+            <div class="card">
+                <h3>Ready for Business</h3>
+                <p>Windows Event Log integration, SCM-managed service, watchdog timers, and automatic power actions &mdash; production-ready from day one.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container contact">
+        <h2>Get in Touch</h2>
+        <p>
+            Interested in acquisition, OEM licensing, or partnership?
+            We'd love to hear from you.
+        </p>
+        <a href="mailto:commercial@lightups.io" class="email">commercial@lightups.io</a>
+        <p class="interests">
+            Enterprise licensing &middot; Hardware bundling &middot; Strategic investment
+        </p>
+    </div>
+</section>
 
 <footer>
-    &copy; 2026 LightUps Project. Developed with <strong>Qt 6.9.1</strong> & <strong>C++</strong>.<br>
-    Licensed under AGPL v3. Source available on <a href="https://github.com/Light-Ups/LightUps" style="color: var(--primary);">GitHub</a>.
+    <div class="container">
+        LightUps &mdash; Smart UPS Monitoring Made Effortless
+    </div>
 </footer>
 
 </body>
