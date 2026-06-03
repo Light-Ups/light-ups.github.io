@@ -1,0 +1,67 @@
+:root {
+    /* Primary Palette */
+    --brand-darkest: #0d0d12;
+    --brand-amber: #f59e0b;
+    --brand-amber-light: #fbbf24;
+    --brand-amber-dim: #d97706;
+    --brand-surface: #14141e;
+    --brand-border: #1e1e2a;
+    --brand-border-section: #1a1a26;
+    --brand-border-subtle: #2a2a36;
+    --brand-border-hover: #2a2a3e;
+    --brand-hero-start: #1a1a28;
+    --brand-text-muted: #9ca3af;
+    --brand-text-dim: #6b7280;
+    --brand-text-footer: #4b5563;
+
+    /* Theme Backgrounds */
+    --color-bg-rgb: 13, 13, 18;
+    --color-bg: rgb(var(--color-bg-rgb));
+    --color-bg-nav: rgba(var(--color-bg-rgb), 0.92);
+    --color-bg-card: var(--brand-surface);
+    --color-bg-hero-start: var(--brand-hero-start);
+    --color-bg-badge: rgba(var(--color-accent-rgb), 0.1);
+    --color-bg-email-hover: rgba(var(--color-accent-rgb), 0.05);
+    --color-bg-highlight: var(--brand-surface);
+
+    /* Borders */
+    --color-border: var(--brand-border);
+    --color-border-section: var(--brand-border-section);
+    --color-border-card-hover: var(--brand-border-hover);
+    --color-border-subtle: var(--brand-border-subtle);
+    --color-border-badge: rgba(var(--color-accent-rgb), 0.15);
+    --color-border-email: rgba(var(--color-accent-rgb), 0.25);
+
+    /* Text */
+    --color-text: #e8e8ed;
+    --color-text-muted: var(--brand-text-muted);
+    --color-text-dim: var(--brand-text-dim);
+    --color-text-footer: var(--brand-text-footer);
+
+    /* Accent */
+    --color-accent-rgb: 245, 158, 11;
+    --color-accent: rgb(var(--color-accent-rgb));
+    --color-accent-hover: var(--brand-amber-light);
+
+    /* Semantic Aliases (backward compat) */
+    --brand-dark: var(--color-bg);
+    --brand-emerald: var(--color-accent);
+    --brand-teal: var(--brand-amber-dim);
+    --brand-emerald-light: var(--color-accent-hover);
+    --brand-emerald-dim: var(--brand-amber-dim);
+    --neutral-bg: #F9FAFB;
+    --neutral-text: #1F2937;
+    --neutral-muted: #6B7280;
+    --neutral-bg-dark: var(--color-bg);
+    --neutral-text-dark: var(--color-text);
+    --neutral-muted-dark: var(--color-text-muted);
+    --color-link: var(--color-accent);
+    --color-link-hover: var(--color-accent-hover);
+}
+
+.bg-brand-dark { background-color: var(--brand-dark); }
+.bg-brand-amber { background-color: var(--color-accent); }
+.bg-brand-surface { background-color: var(--color-bg-card); }
+.text-brand-amber { color: var(--color-accent); }
+.text-white { color: #FFFFFF; }
+.text-muted { color: var(--color-text-muted); }

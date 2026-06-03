@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LightUps — Smart UPS Monitoring Made Effortless</title>
     <meta name="description" content="A complete ecosystem for professional UPS monitoring. From hardware to desktop — open, lightweight, and ready for business.">
+    <link rel="stylesheet" href="css/brand-palette.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <link rel="icon" href="logo.ico">
 </head>
 <body>
 
@@ -28,9 +29,9 @@
         <p class="tagline">UPS Monitoring Ecosystem</p>
         <h1>Smart UPS Monitoring<br><span class="accent">Made Effortless</span></h1>
         <p class="subtitle">
-            A practical and functional UPS monitoring solution for your local network.
-            Easy to configure, effortless to use. Not a cloud platform &mdash;
-            no remote alarming, no external servers.
+            Most UPS software is basic, outdated, or simply absent.
+            LightUps gives you professional monitoring, automatic shutdown
+            to protect your PCs and your UPS battery &mdash; all on your local network.
         </p>
     </div>
 </section>
@@ -39,7 +40,7 @@
     <div class="container">
         <div class="section-header">
             <h2>The Ecosystem</h2>
-            <p>Three components, one goal: keep your infrastructure powered and visible.</p>
+            <p>Your UPS provides backup power. LightUps makes sure your PCs shut down safely before the battery runs out.</p>
         </div>
 
         <div class="flow">
@@ -54,16 +55,16 @@
                 <span class="flow-connector">&#8594;</span>
                 <span class="flow-step">LightUps GUI</span>
             </div>
-            <p style="color:#6b7280; font-size:13px; margin-top:20px;">
+            <p class="flow-note">
                 Or connect directly via USB &mdash; no Satellite required.
             </p>
         </div>
 
-        <div class="cards" style="margin-top:48px;">
+        <div class="cards cards--wide">
             <div class="card">
                 <span class="icon">&#9889;</span>
                 <h3>LightUps</h3>
-                <p>Windows monitoring software. Version 1.0. Currently supports NHS Mini Senoidal UPS units via USB. A lightweight service runs 24/7, paired with a system tray GUI.</p>
+                <p>Windows monitoring software for NHS Mini Senoidal UPS units via USB. A lightweight service runs 24/7, paired with a system tray GUI.</p>
             </div>
             <div class="card">
                 <span class="icon">&#9733;</span>
@@ -96,14 +97,14 @@
                 <div class="label">CPU idle</div>
             </div>
         </div>
-        <p style="text-align:center; color:#6b7280; font-size:14px; margin-top:24px;">
+        <p class="specs-caption">
             Minimal footprint &mdash; runs on any modern Windows PC
         </p>
 
-        <div class="cards" style="margin-top:40px;">
+        <div class="cards cards--narrow">
             <div class="card">
                 <h3>Real-time Monitoring</h3>
-                <p>Track input/output voltage, battery level, battery voltage, load percentage, and temperature &mdash; updated continuously.</p>
+                <p>Real-time telemetry &mdash; values depend on your UPS model. Input/output voltage, battery level, battery voltage, load, and temperature are shown when available.</p>
             </div>
             <div class="card">
                 <h3>Windows Service + GUI</h3>
@@ -115,7 +116,7 @@
             </div>
             <div class="card">
                 <h3>Smart Power Actions</h3>
-                <p>Automatic shutdown, sleep, or hibernate when battery reaches critical level. Configurable delay and CPU power saver mode.</p>
+                <p>Automatic shutdown, sleep, or hibernate when battery reaches critical level &mdash; even if your UPS lacks these features natively. Prevents data loss and protects the UPS battery from deep discharge.</p>
             </div>
             <div class="card">
                 <h3>Windows Event Log</h3>
@@ -123,7 +124,7 @@
             </div>
             <div class="card">
                 <h3>Multi-language</h3>
-                <p>English, Dutch, and Brazilian Portuguese out of the box. Easy to add more.</p>
+                <p>English, Dutch, and Brazilian Portuguese out of the box. Additional languages added on request.</p>
             </div>
         </div>
     </div>
@@ -140,7 +141,7 @@
             <div class="card">
                 <span class="icon">&#127760;</span>
                 <h3>Network your UPS</h3>
-                <p>Connects to your UPS via USB and broadcasts telemetry over Ethernet to up to <strong>4 PCs</strong> simultaneously. Ideal for small offices and server rooms.</p>
+                <p>Connects to your UPS via USB and broadcasts telemetry over Ethernet to up to <strong>4 PCs</strong> simultaneously. When power fails, every connected PC shuts down safely. Ideal for small offices and server rooms where multiple machines share one UPS.</p>
                 <div class="badges">
                     <span class="badge">mDNS: lightups.local</span>
                     <span class="badge">SSDP: Windows Discovery</span>
@@ -163,9 +164,9 @@
             </div>
         </div>
 
-        <div style="margin-top:40px; padding:32px; background:#14141e; border:1px solid #1e1e2a; border-radius:16px;">
-            <h3 style="margin-bottom:8px; font-size:16px; color:#f59e0b;">How to connect a PC</h3>
-            <p style="color:#9ca3af; font-size:14px;">
+        <div class="highlight-box">
+            <h3>How to connect a PC</h3>
+            <p>
                 Open the Satellite web dashboard, claim an available slot, and copy the token.
                 Enter the hostname or IP address, the MAC address, and the token in the
                 <strong>TLS PSK Ethernet Driver</strong> settings of the LightUps service.
@@ -192,19 +193,19 @@
             </div>
             <div class="card">
                 <h3>Designed for Local Networks</h3>
-                <p>Built for on-premises monitoring &mdash; not remote alarming or cloud management. Every component runs on your own network. No data leaves your premises. No recurring fees.</p>
+                <p>Purpose-built for on-premises use &mdash; no cloud, no remote alarming. Instant reaction when power fails: your PCs shut down, your UPS battery is preserved. Every component runs on your own network.</p>
             </div>
             <div class="card">
                 <h3>Extensible by Design</h3>
-                <p>A clean plugin interface makes it easy to support new UPS models. The ecosystem includes serial, Ethernet, and encrypted TLS drivers.</p>
+                <p>A clean plugin interface makes it easy to support new UPS models. The ecosystem includes serial and encrypted TLS Ethernet drivers.</p>
             </div>
             <div class="card">
                 <h3>Hardware Bridge Option</h3>
-                <p>Need to monitor a UPS in a remote rack or shared office? The Satellite bridges it to the network securely &mdash; up to 4 PCs per unit.</p>
+                <p>Need to connect a UPS in a server room or shared office to multiple PCs? The Satellite bridges it over your local network &mdash; up to 4 PCs per unit.</p>
             </div>
             <div class="card">
                 <h3>Ready for Business</h3>
-                <p>Windows Event Log integration, SCM-managed service, watchdog timers, and automatic power actions &mdash; production-ready from day one.</p>
+                <p>Windows Event Log integration, automatic startup, watchdog timers, and automatic power actions &mdash; production-ready from day one.</p>
             </div>
         </div>
     </div>
